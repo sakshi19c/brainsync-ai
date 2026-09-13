@@ -1,0 +1,19 @@
+{
+  "name": "brainsync-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^10.0.3",
+    "reactflow": "^11.11.4"
+  },
+  "scripts": {
+    "frontend": "cd brainsync-ai && npm run dev",
+    "backend": "cd backend && uvicorn main:app --reload",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
